@@ -1,0 +1,1230 @@
+*{padding: 0; margin: 0;}
+
+body{
+    color: rgb(239, 239, 239);
+    background-color: rgb(55, 55, 55);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Nunito", serif;
+    font-size: medium;
+    max-width: 1920px;
+    padding: 15px auto;
+    caret-color: transparent;
+    margin: auto;
+}
+
+html,body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    caret-color: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-left: 0px;
+    height: 65px;
+    max-width: 1920px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(50, 50, 50);
+    z-index: 3;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.menu{
+    display: none;
+}
+
+.link-logo{
+    width: 10%;
+}
+
+.img-logo{
+   width: 23%;
+   height: 10%;
+   margin-top: 5%;
+   margin-left: -3%;
+   transform: rotate(-3deg);
+}
+
+.vmeste{
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    margin-left: -7.5%;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+    width: 25%;
+    opacity: 0;
+    transition: .5s;
+    z-index: 2;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+.input {
+    width: 350px;
+    height: 38px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-left: 2.5rem;
+    border: #efeeee 1px solid;
+    caret-color: rgb(147, 55, 234);
+    border-radius: 4px;
+    outline: none;
+    background-color: rgb(55, 55, 55);
+    color: #ebebeb;
+    transition: 0.3s all;
+}
+
+.bi-bi-x-lg-input{
+    display: none;
+    margin-left: 80%;
+}
+
+.link-menu{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    margin-left: 3.3%;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.link-menu:hover{
+    color: rgb(202, 202, 202);
+}
+
+.div-switch{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    height: 60px;
+    width: 50px;
+    margin-left: -3%;
+    z-index: 3;
+}
+
+.bi-bi-chevron-left{
+    cursor: pointer;
+    padding-left: 15%;
+    display: none;
+}
+
+.ul-menu{
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 32%;
+    height: 70px;
+    margin-left: 40%;
+    transition: .2s;
+    z-index: 4;
+}
+
+.ul-menu li{
+    padding-left: 4%;
+    order: 0;
+}
+
+.bi-bi-chevron-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: -5.3%;
+    padding-right: 20%;
+    background-color: rgb(50, 50, 50);
+}
+
+#broadcasts{
+    transition: .3s;
+}
+
+#broadcasts:hover{
+    transform: translateX(-80%);
+    background: rgb(50, 50, 50);
+    padding-left: 7%;
+    z-index: 2;
+}
+
+#main{
+    color: rgb(195, 0, 255);
+}
+
+.user-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 2%;
+    margin-left: 1.5%;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1.5%;
+    margin-left: 71%;
+    border-radius: 7px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.add{
+    display: none;
+}
+
+.user{
+    position: absolute;
+    display: block;
+    background-color: rgb(50, 50, 50);
+    width: 13%;
+    height: 400%;
+    padding-left: 1%;
+    border-radius: 8px;
+    margin-top: 20%;
+    margin-left: 78%;
+    z-index: 1;
+    display: none;
+}
+
+.div-content{
+    height: 100%;
+    width: 77%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.links{
+    margin-top: 5%;
+}
+
+.Your-account{
+    margin-left: 3.5%;
+    margin-top: -5%;
+}
+
+.theme-h3{
+    display: inline;
+    margin-left: 3.5%;
+    cursor: pointer;
+}
+
+.theme{
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 5px;
+    color: rgb(116, 189, 253);
+    cursor: pointer;
+}
+
+.theme:hover {
+    text-decoration: underline;
+}
+
+.logo-social{
+    position: absolute;
+    width: 38%;
+    margin-left: -40%;
+    margin-top: -2%;
+}
+
+.registration-main {
+    display: grid;
+    align-content: center;
+    position: relative;
+    margin-left: 45%;
+    margin-top: 5%;
+    animation-name: registration;
+    animation-duration: 800ms;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    z-index: 1;
+}
+
+@keyframes registration {
+    0% {
+      opacity: 0;
+    }
+  
+    40% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+  }
+
+.welcome {
+    font-size: 40px;
+    margin-left: 1.5%;
+    margin-bottom: 5%;
+}
+
+.description {
+    font-size: 15px;
+    margin-left: 1.5%;
+    margin-top: -4%;
+    color: #bebebe;
+}
+
+.reg {
+    position: absolute;
+    z-index: 2;
+    margin-top: 2%;
+}
+  
+#usernameField-username {
+    display: block;
+    width: 330px;
+    height: 50px;
+    background-color: #292929;
+    border-radius: 10px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 15px;
+    transition-duration: .2s;
+}
+  
+#usernameField-username:focus,
+#usernameField-username:valid {
+    border: 2px solid rgb(152, 88, 255);
+    transition-duration: .2s;
+}
+
+#usernameField-password {
+    display: block;
+    width: 330px;
+    height: 50px;
+    background-color: #292929;
+    border-radius: 10px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    margin-top: 6%;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 15px;
+    transition-duration: .2s;
+}
+  
+#usernameField-password:focus,
+#usernameField-password:valid {
+    border: 2px solid rgb(152, 88, 255);
+    transition-duration: .2s;
+}
+
+.registration-main button {
+    --fancy-button-gradient-0: #8d49fd;
+    --fancy-button-gradient-50: #7f56f3;
+    --fancy-button-gradient-100: #5691f3;
+    --fancy-button-inner-shadow-top: rgba(233, 209, 255, 0.2);
+    --fancy-button-inner-shadow-top-lg: rgba(9, 12, 60, 0.1);
+    --fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
+    --fancy-button-shine-top: #e9d1ff;
+    --fancy-button-shine-bottom: #adfff9;
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 15px;
+    font-size: 15px;
+    background-image: linear-gradient(
+    var(--fancy-button-gradient-0) 0%,
+    var(--fancy-button-gradient-50) 50%,
+    var(--fancy-button-gradient-100) 100%
+    );
+    background-size: 400%;
+    margin-top: 20%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-login{
+    margin-left: 2%;
+}
+
+.bi-bi-chat-right-dots{
+    position:fixed; 
+    cursor: pointer; 
+    margin-left:95%; 
+    margin-top:40%; 
+    z-index:3;
+}
+
+#shadow-help{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82, 82, 82);
+    opacity: 0.2;
+    display: none;
+    z-index: 4;
+}
+
+.help{
+    position: fixed;
+    top: 0;
+    background-color: rgb(37, 37, 37);
+    font-size: 20px;
+    margin-left: 75%;
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    width: 25%;
+    z-index: 5;
+    animation-name: help;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: help;
+    animation-delay: 0s;
+    display: none;
+}
+
+.header-help{
+    background-color: #292929;
+    height: 8%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-bi-x-lg{
+    position:absolute;
+    margin-left: 85%; 
+    cursor:pointer;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    margin-top: 143%;
+    height: 20%;
+}
+
+.message input{
+    width: 99%;
+    height: 45%;
+    color: #efeeee;
+    font-size: 14px;
+    background-color: #292929;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: 2px solid #292929;
+    outline: none;
+}
+
+.bi-bi-cursor{
+    position: absolute;
+    margin-left: 88%;
+    cursor: pointer;
+}
+
+.bottom-menu{
+    display: none;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(54, 53, 53);
+    height: 7%;
+    border-radius: 0px 0px 7px 0px;
+    transition: .5s;
+    z-index: 2;
+}
+
+.bottom-menu img{
+    display: inline;
+    width: 7%;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
+.menu-logo{
+    transform: rotate(-4deg);
+}
+
+@media(min-width:1920px){
+    .header{
+        height: 80px;
+    }
+
+    .search{
+        margin-left: 66%;
+    }
+
+    .form input{
+        width: 500px;
+    }
+
+    .ul-menu{
+        margin-left: 40%;
+    }
+
+    .bi-bi-chevron-right{
+        display: flex;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: -4%;
+    }
+
+    .div-switch{
+        margin-left: 8.7%;
+    }
+
+    .registration-main h1{
+        font-size: 20px;
+    }
+
+    .registration-main h3{
+        font-size: 40px;
+    }
+
+    .registration-main button{
+        margin-top: 18%;
+    }
+
+    .registration-main img{
+        width: 34%;
+    }
+
+    .help{
+        height: 100%;
+        width: 25%;
+        font-size: 30px;
+    }
+
+    .message{
+        margin-top: 175%;
+    }
+
+    .bi-bi-x-lg{
+        width: 25px;
+    }
+
+    .message input{
+        font-size: 21px;
+    }
+
+    .bi-bi-cursor{
+        width: 32px;
+    }
+
+    .user{
+        height: 350%;
+        font-size: 23px;
+    }
+
+    .bi-bi-plus-circle{
+        width: 36px;
+    }
+}
+
+@media(max-width:1440px){
+    .div-switch{
+        width: 10%;
+        margin-left: -15%;
+    }
+
+    .div-switch svg{
+        padding-left: 70%;
+    }
+
+    .message{
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 195%;
+    }
+
+    .ul-menu{
+        margin-left: 42%;
+   }
+
+   .bi-bi-chevron-right{
+        display: flex;
+        align-items: center;
+    }   
+
+   .search{
+        width: 1.8%;
+   }
+
+    .user{
+        margin-top: 20%;
+        width: 15%;
+    }
+}
+
+@media(max-width:1280px){
+    .form input{
+        width: 300px;
+    }
+    
+    .bi-bi-chevron-right{
+        margin-left: 40%;
+        margin-top: -6%;
+   }
+
+    .div-switch{
+        width: 10%;
+        margin-left: -22%;
+    }
+
+    .div-switch svg{
+        padding-left: 70%;
+    }
+
+   .ul-menu{
+        margin-left: 42%;
+   }
+
+   .bi-bi-chevron-right{
+        display: flex;
+        align-items: center;
+    }   
+
+   .search{
+        width: 1.8%;
+   }
+
+   .user-btn{
+        width: 2.3%;
+   }
+
+   .user{
+        width: 15%;
+        margin-top: 23%;
+   }
+
+   .registration-main button{
+        margin-top: 22%;
+   }
+
+   .help{
+        height: 100%;
+        width: 30%;
+        margin-left: 70%;
+   }
+
+   .header-help{
+    height: 8%;
+   }
+
+   .message{
+        position: sticky;
+        margin-top: 165%;
+        display: flex;
+        align-items: center;
+        height: 18%;
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px){
+    body{
+        padding: 15px auto;
+        margin: auto;
+    }
+
+   .img-logo{
+        width: 30%;
+        margin-top: 10%;
+        margin-left: -15%;
+   }
+
+   .ul-menu{
+     display: block;
+     margin-top: 13%;
+     margin-left: -70%;
+   }
+
+   .bi-bi-chevron-right{
+        display: none;
+   }
+
+   .div-switch{
+        display: none;
+   }
+
+   .bi-bi-chevron-left{
+        display: none;
+    }
+
+   .search{
+        display: none;
+   }
+
+   .form{
+        opacity: 1;
+        margin-left: -12%;
+   }
+
+   .form input{
+    width: 450px;
+   }
+
+   .user-btn{
+    width: 2.8%;
+    margin-left: 63%;
+   }
+
+   .user{
+        width: 19%;
+        margin-top: 28%;
+   }
+
+   .registration-main button{
+    margin-top: 30%;
+   }
+
+   .help{
+        height: 100%;
+        width: 30%;
+    }
+
+    .message{
+        margin-top: 205%;
+    }
+}
+
+@media(max-width:480px){
+    .menu{
+        display: block;
+        width: 10%;
+        margin-left: -3%;
+        cursor: pointer;
+    }
+
+    .header{
+        height: 60px;
+        width: 100%;
+    }
+
+    .link-logo{
+        display: none;
+    }
+
+    .vmeste{
+        position: absolute;
+        margin-bottom: 2%;
+        font-size: 38px;
+        margin-left: -3%;
+    }
+
+    .bi-bi-chevron-right{
+        display: none;
+    }
+
+    .bi-bi-chevron-left{
+        display: none;
+    }
+
+    .div-switch{
+        display: none;
+    }
+
+    .ul-menu{
+        display: block;
+        margin-top: 50%;
+        margin-left: -70%;
+        width: 40%;
+        height: 280%;
+        border-radius: 10px;
+        background-color: rgb(50, 50, 50);
+    }
+
+    .ul-menu li{
+        padding-left: 15%;
+        padding-top: 2%;
+    }
+    
+    .search{
+        display: block;
+        width: 7%;
+        margin-left: 70%;
+        z-index: 3;
+    }
+
+    .add{
+        display: block;
+        width: 7%;
+        margin-left: 7%;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .user-btn{
+        display: none;
+    }
+
+    .bi-bi-plus-circle{
+        display: none;
+    }
+
+    .div-content{
+        display: none;
+    }
+
+    .form{
+        opacity: 0;
+        margin-left: -34%;
+    }
+
+    .group{
+        width: 300%;
+    }
+
+    .form input{
+        width: 350px;
+        height: 38px;
+        transition: .1s;
+    }
+
+    .bi-bi-x-lg-input{
+        display: block;
+        width: 25px;
+        margin-left: -10%;
+        cursor: pointer;
+    }
+
+    .registration-main{
+        display: none;
+    }
+
+    .bi-bi-chat-right-dots{
+        position: fixed;
+        bottom: 10%;
+        margin-left: 82%;
+        width: 9%;
+        z-index: 2;
+    }
+
+    .help{
+        position: fixed;
+        width: 100%;
+        margin-top: -1%;
+        margin-left: 0;
+    }
+
+    .header-help{
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        height: 3%;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 25px;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .message{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 7%;
+        bottom: 0;
+        margin-top: 170%;
+        font-size: 45px;
+    }
+
+    .message input{
+        font-size: 17px;
+    }
+
+    .bi-bi-cursor{
+        margin-left: 85%;
+        width: 7%;
+    }
+
+    .bottom-menu{
+        display: flex;
+    }
+}
+
+@media(max-width:360px){
+    .menu{
+        display: block;
+        width: 11%;
+        margin-left: -3%;
+        cursor: pointer;
+    }
+
+    .header{
+        height: 60px;
+        width: 100%;
+    }
+
+    .link-logo{
+        display: none;
+    }
+
+    .vmeste{
+        position: absolute;
+        margin-bottom: 2%;
+        font-size: 40px;
+        margin-left: -3%;
+    }
+
+    .bi-bi-chevron-right{
+        display: none;
+    }
+
+    .bi-bi-chevron-left{
+        display: none;
+    }
+
+    .div-switch{
+        display: none;
+    }
+
+    .ul-menu{
+        display: block;
+        margin-top: 55%;
+        margin-left: -68%;
+        width: 40%;
+        height: 280%;
+        border-radius: 10px;
+        background-color: rgb(50, 50, 50);
+    }
+
+    .ul-menu li{
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    
+    .search{
+        display: block;
+        width: 6.3%;
+        margin-left: 70%;
+        z-index: 3;
+    }
+
+    .add{
+        display: block;
+        width: 6.3%;
+        margin-left: 7%;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .bi-bi-plus-circle{
+        display: none;
+    }
+
+    .user-btn{
+        display: none;
+    }
+
+    .div-content{
+        display: none;
+    }
+
+    .form{
+        margin-left: -34%;
+    }
+
+    .group{
+        width: 300%;
+    }
+
+    .form input{
+        width: 250px;
+        height: 38px;
+        transition: .1s;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 30px;
+        margin-left: -18%;
+        cursor: pointer;
+    }
+
+    .registration-main{
+        display: none;
+    }
+
+    .bi-bi-chat-right-dots{
+        display: none;
+    }
+
+    .bottom-menu{
+        display: flex;
+    }
+
+    .bi-bi-chat-right-dots{
+        position: fixed;
+        display: block;
+        bottom: 10%;
+        margin-left: 82%;
+        width: 9%;
+        z-index: 2;
+    }
+
+    .help{
+        position: fixed;
+        width: 100%;
+        margin-top: -1%;
+        margin-left: 0;
+    }
+
+    .header-help{
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        height: 4%;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 25px;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .message{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 7%;
+        bottom: 0;
+        margin-top: 170%;
+        font-size: 45px;
+    }
+
+    .message input{
+        font-size: 17px;
+    }
+
+    .bi-bi-cursor{
+        margin-left: 85%;
+        width: 7%;
+    }
+}
+
+@media(max-width:320px){
+    .menu{
+        display: block;
+        width: 40%;
+        margin-left: -2%;
+        cursor: pointer;
+    }
+
+    .header{
+        height: 50px;
+        width: 100%;
+    }
+
+    .link-logo{
+        display: none;
+    }
+
+    .vmeste{
+        position: absolute;
+        margin-bottom: 2%;
+        font-size: 35px;
+        margin-left: 1%;
+    }
+
+    .bi-bi-chevron-right{
+        display: none;
+    }
+
+    .bi-bi-chevron-left{
+        display: none;
+    }
+
+    .div-switch{
+        display: none;
+    }
+
+    .ul-menu{
+        display: block;
+        margin-top: 65%;
+        margin-left: -60%;
+        width: 60%;
+        height: 320%;
+        border-radius: 10px;
+        background-color: rgb(50, 50, 50);
+    }
+
+    .ul-menu li{
+        padding-left: 25%;
+    }
+    
+    .search{
+        display: block;
+        width: 30%;
+        margin-left: 70%;
+        z-index: 3;
+    }
+
+    .bi-bi-plus-circle{
+        display: none;
+    }
+
+    .add{
+        display: block;
+        width: 30%;
+        margin-left: 7%;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .user-btn{
+        display: none;
+    }
+
+    .div-content{
+        display: none;
+    }
+
+    .form{
+        margin-left: -34%;
+    }
+
+    .group{
+        width: 300%;
+    }
+
+    .form input{
+        width: 250px;
+        height: 32px;
+        transition: .1s;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 300px;
+        cursor: pointer;
+    }
+
+    .registration-main{
+        display: none;
+    }
+
+    .bi-bi-chat-right-dots{
+        display: none;
+    }
+
+    .bottom-menu{
+        display: flex;
+    }
+
+    .bi-bi-chat-right-dots{
+        position: sticky;
+        display: block;
+        bottom: 10%;
+        width: 9%;
+        z-index: 2;
+    }
+
+    .help{
+        position: fixed;
+        width: 100%;
+        margin-top: -1%;
+        margin-left: 0;
+    }
+
+    .header-help{
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        height: 4%;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 25px;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .message{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 7%;
+        bottom: 0;
+        margin-top: 170%;
+        font-size: 45px;
+    }
+
+    .message input{
+        font-size: 17px;
+    }
+
+    .bi-bi-cursor{
+        margin-left: 85%;
+        width: 7%;
+    }
+}
